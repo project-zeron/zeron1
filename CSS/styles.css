@@ -64,19 +64,23 @@ body{background-image:url('../wallart/background.jpg');
                     overflow: hidden;
                 }
 
-                p{color:red;}
+                .error{color:red;}
 
-                input[type="text"], input[type="password"]{
+                input[type="email"], input[type="password"]{
                     padding: 10px;
                     height: 30px;
                     width: 45%;
                     font-size: 1.3rem;
+                   
                 }
 
                 input[type="submit"]{
                     padding: 10px 20px;
                     font-size: 1.3rem;
+                    min-width: 24vh;
                     border: none;
                     cursor: pointer;
                     margin-top: 20px;
+                    
+                    background-color: #408DD4;
                 }
