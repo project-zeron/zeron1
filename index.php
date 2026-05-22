@@ -32,7 +32,7 @@ if (isset($_GET['message'])) {
         <input type="password" name="password" id="password" placeholder="Enter your password">
         <input type="hidden" name="role" value="user" id="role-input">
         <input type="submit" value="Submit">
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p>Don't have an account? <a href="signup.php">Sign up</a></p>
     </form>
    </main>
 
