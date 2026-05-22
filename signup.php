@@ -23,13 +23,13 @@ if (isset($_GET['message'])) {
        <div class="logo">
                 <img src="./user_profiles/test_upload.jpg" alt="Logo" width="80">
             </div>
-            <h2 id="details">login as: user</h2>
+            <h2 id="details">Create account as: user</h2>
             <p class="error"><?php if (isset($message)) { echo $message; } ?></p>
         <input type="email" id="email" name="email" placeholder="Enter your email"><br>
         <input type="password" name="password" id="password" placeholder="Enter your password">
         <input type="hidden" name="role" value="user" id="role-input">
         <input type="submit" value="Submit">
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p>Already have an account? <a href="index.php">Login</a></p>
     </form>
    </main>
     
