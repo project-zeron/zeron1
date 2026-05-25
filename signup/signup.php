@@ -19,7 +19,7 @@ if (isset($_GET['message'])) {
         </header>
 
    <main>
-    <form action="login.php" method="post">
+    <form action="create_account.php" method="post">
        <div class="logo">
                 <img src="./user_profiles/test_upload.jpg" alt="Logo" width="80">
             </div>
