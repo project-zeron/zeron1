@@ -1,8 +1,13 @@
 <?php
-if (isset($_GET['message'])) {
-    $message=$_GET['message'];
-}
+//get message and echo it if it exists
+$message = $_GET['message'] ?? '';
 
+if ($message !== '') {
+
+    $safeMessage = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
+    
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +32,7 @@ if (isset($_GET['message'])) {
                 <img src="./user_profiles/test_upload.jpg" alt="Logo" width="80">
             </div>
             <h2 id="details">login as: user</h2>
-            <p class="error"><?php if (isset($message)) { echo $message; } ?></p>
+            <p class="error"><?php if (isset($safeMessage)) { echo $safeMessage; } ?></p>
         <input type="email" id="email" name="email" placeholder="Enter your email"><br>
         <input type="password" name="password" id="password" placeholder="Enter your password">
         <input type="hidden" name="role" value="user" id="role-input">
