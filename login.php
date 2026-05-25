@@ -2,7 +2,7 @@
 
 session_start();
 
-$conn = mysqli_connect("localhost", "root", "", "ZERON");
+$conn = mysqli_connect("localhost", "root", "", "zeron");
 
 if (!$conn) {
     die("Database connection failed");
@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $form_role = $_POST['role'];
 
-$sql = "SELECT * FROM user WHERE email = ?";
+$sql = "SELECT * FROM users WHERE email = ?";
 
 $stmt = mysqli_prepare($conn, $sql);
 
