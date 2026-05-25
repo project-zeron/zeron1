@@ -7,3 +7,12 @@ CREATE TABLE users (
     role VARCHAR(50) NOT NULL DEFAULT 'subscriber',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE bundles (
+   bundle_id INT PRIMARY KEY AUTO_INCREMENT,
+   bundle_name VARCHAR(255) NOT NULL,
+  bundle_description TEXT,
+ bundle_price DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
