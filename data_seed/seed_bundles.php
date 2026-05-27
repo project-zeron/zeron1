@@ -1,5 +1,6 @@
 <?php
 // 1. Database Connection (Ensure $conn is defined, usually via an include)
+require_once '../config/db.php'; // Adjust the path as necessary
 // require_once 'db_connection.php'; 
 
 // 2. Define the 5 bundles array
