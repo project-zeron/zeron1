@@ -26,7 +26,7 @@ if ($message !== '') {
             <button id="team-btn">user</button>
             <button id="admin-btn">admin</button>
         </div>
-   <main>
+   <main class="authentication-container">
     <form action="login.php" method="post">
        <div class="logo">
                 <img src="./user_profiles/test_upload.jpg" alt="Logo" width="80">

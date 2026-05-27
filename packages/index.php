@@ -2,13 +2,16 @@
 // bundles-component.php
 
 // Ensure your database connection is active
-require_once __DIR__ . '/config/db.php';
+require '../config/db.php';
 
-try {
-    // Fetch all records from the bundles table
-    $stmt = $pdo->query("SELECT bundle_id, bundle_name, bundle_description, bundle_price, created_at FROM bundles");
-    $bundles = $stmt->fetchAll();
-} catch (\PDOException $e) {
+// Fetch all records from the bundles table using MySQLi
+$query = "SELECT bundle_id, bundle_name, bundle_description, bundle_price, created_at FROM bundles";
+$result = $conn->query($query);
+
+if ($result) {
+    // Correctly fetch all rows using MySQLi
+    $bundles = $result->fetch_all(MYSQLI_ASSOC);
+} else {
     // Elegant fallback if the database query fails
     $bundles = [];
 }
@@ -16,6 +19,7 @@ try {
 // Start buffering the output so it can be handled easily
 ob_start();
 ?>
+
 
 <div class="scroll-container">
     <?php if (!empty($bundles)): ?>
