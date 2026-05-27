@@ -84,3 +84,73 @@ body{background-image:url('../wallart/background.jpg');
                     
                     background-color: #408DD4;
                 }
+
+                /* The container that allows horizontal scrolling */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Styling individual bundle items */
+.bundle-card {
+    flex: 0 0 300px; /* Forces cards to stay side-by-side and scroll right */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.bundle-card h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.bundle-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.bundle-card .price {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.bundle-card .date {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Scrollbar customizations for Chrome, Safari, and Edge */
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.no-data {
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}
