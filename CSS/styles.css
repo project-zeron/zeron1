@@ -136,14 +136,21 @@ body{background-image:url('../wallart/background.jpg');
     padding: 20px;
     width: 100%;
 }
-
+.delete{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .admin-main-content{
     display: flex;
     justify-content: center;
     gap: 10px;
     align-content: flex-start;//align items to the top not center
     height: 70vh;
-    width:100%;
+    width: 100%;
 }
 
 .add-package-form{
