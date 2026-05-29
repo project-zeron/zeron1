@@ -1,0 +1,40 @@
+Folder PATH listing
+Volume serial number is 0000001C 3C40:761F
+C:.
+|   index.php
+|   login.php
+|   README.md
+|   tree.txt
+|   
++---admin_dashboard
+|       index.php
+|       
++---config
+|       db.php
+|       
++---CSS
+|       styles.css
+|       
++---Dashboard
+|       index.php
+|       
++---DATABASES
+|       initial_schema.sql
+|       
++---data_seed
+|       initial_admin.php
+|       seed_bundles.php
+|       
++---packages
+|       index.php
+|       
++---signup
+|       create_account.php
+|       index.php
+|       
++---user_profiles
+|       test_upload.jpg
+|       
+\---wallart
+        background.jpg
+        

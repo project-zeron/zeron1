@@ -18,10 +18,10 @@ if (isset($_GET['message'])) {
             <h1>Project Zeron</h1>
         </header>
 
-   <main>
+   <main class="authentication-container">
     <form action="create_account.php" method="post">
        <div class="logo">
-                <img src="./user_profiles/test_upload.jpg" alt="Logo" width="80">
+                <img src="../user_profiles/test_upload.jpg" alt="Logo" width="80">
             </div>
             <h2 id="details">Create account as: user</h2>
             <p class="error"><?php if (isset($message)) { echo $message; } ?></p>

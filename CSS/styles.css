@@ -148,7 +148,7 @@ body{background-image:url('../wallart/background.jpg');
     display: flex;
     justify-content: center;
     gap: 10px;
-    align-content: flex-start;//align items to the top not center
+    align-content: flex-start;
     height: 70vh;
     width: 100%;
 }
