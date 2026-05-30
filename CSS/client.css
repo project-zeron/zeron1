@@ -110,3 +110,23 @@ body{background-image:url('../wallart/background.jpg');
     font-size: 1.2rem;
     color: #00ffcc;         /* Vivid accent tone for visibility against dark schemes */
 }
+
+
+/* Styling the native dialog element container box */
+dialog.checkout-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 420px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+/* Modifying the native backdrop layer dim color that appears behind the dialog */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
